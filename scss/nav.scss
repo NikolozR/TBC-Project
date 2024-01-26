@@ -1,0 +1,54 @@
+@font-face {
+    font-family: BPG;
+    src: url(../assets/bpg_arial_2009.ttf);
+}
+
+body {
+    header {
+        nav {
+            background-color: #1A1E1F;
+            padding: 22px 0;
+            position: sticky;
+            width: 100%;
+            .container {
+                .sub-nav {
+                    display: flex;
+                    justify-content: space-between;
+                    .main-logo {
+                        display: flex;
+                        svg {
+                            width: 182px;
+                            height: 40px;
+                        }
+                    }
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        gap: 50px;
+                        padding-right: 15px;
+                        li {
+                            a {
+                                color: #F4F4F4;
+                                line-height: 26px;
+                                font-size: 14px;
+                                transition: all 0.3s ease;
+                            }
+                            .active {
+                                color: #0DA3E0;
+                            }
+                            a:hover {
+                                color: #0DA3E0;
+                            }
+                        }
+                        li:nth-child(1), li:nth-child(4) {
+                            a {
+                                font-family: BPG;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: BPG;
+  src: url(../assets/bpg_arial_2009.ttf);
+}
+body header nav {
+  background-color: #1A1E1F;
+  padding: 22px 0;
+  position: sticky;
+  width: 100%;
+}
+body header nav .container .sub-nav {
+  display: flex;
+  justify-content: space-between;
+}
+body header nav .container .sub-nav .main-logo {
+  display: flex;
+}
+body header nav .container .sub-nav .main-logo svg {
+  width: 182px;
+  height: 40px;
+}
+body header nav .container .sub-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-right: 15px;
+}
+body header nav .container .sub-nav ul li a {
+  color: #F4F4F4;
+  line-height: 26px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+body header nav .container .sub-nav ul li .active {
+  color: #0DA3E0;
+}
+body header nav .container .sub-nav ul li a:hover {
+  color: #0DA3E0;
+}
+body header nav .container .sub-nav ul li:nth-child(1) a, body header nav .container .sub-nav ul li:nth-child(4) a {
+  font-family: BPG;
+}
+
+/*# sourceMappingURL=nav.css.map */

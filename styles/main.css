@@ -1,0 +1,23 @@
+body header .hero {
+  background-image: url(../assets/heroBack.webp);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 352px;
+}
+body header .hero .container .hero-content {
+  color: #F4F4F4;
+  display: flex;
+  align-items: center;
+}
+body header .hero .container .hero-content .text h1 {
+  font-size: 42px;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+body header .hero .container .hero-content .text h3 {
+  font-size: 34px;
+  font-family: BPG;
+  line-height: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */

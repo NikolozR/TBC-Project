@@ -1,0 +1,21 @@
+* {
+    font-family: Arial,Helvetica,sans-serif;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.container {
+    width: 980px;
+    margin: auto;
+}
+@media (max-width: 800px) {
+    .container {
+        width: 80%;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
