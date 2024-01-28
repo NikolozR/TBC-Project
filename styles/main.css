@@ -1,23 +1,331 @@
-body header .hero {
-  background-image: url(../assets/heroBack.webp);
+@font-face {
+  font-family: f5;
+  src: url(../fonts/f5.woff2);
+}
+@font-face {
+  font-family: dd;
+  src: url(../fonts/dd.woff2);
+}
+@font-face {
+  font-family: o77;
+  src: url(../fonts/77.woff2);
+}
+@font-face {
+  font-family: o93;
+  src: url(../fonts/93.woff2);
+}
+body main .hero {
+  background-image: url(../assets/heroBack.png);
   background-position: 50% 50%;
   background-size: cover;
   height: 352px;
+  margin-top: 84px;
 }
-body header .hero .container .hero-content {
+body main .hero .container .hero-content {
+  padding-top: 100px;
   color: #F4F4F4;
-  display: flex;
-  align-items: center;
 }
-body header .hero .container .hero-content .text h1 {
+body main .hero .container .hero-content .text {
+  display: inline-block;
+  margin: auto;
+}
+body main .hero .container .hero-content .text h1 {
   font-size: 42px;
   line-height: 60px;
   margin-bottom: 15px;
+  font-weight: bolder;
 }
-body header .hero .container .hero-content .text h3 {
+body main .hero .container .hero-content .text h3 {
   font-size: 34px;
-  font-family: BPG;
   line-height: 50px;
+}
+body main .hero .container .hero-content .text h1,
+body main .hero .container .hero-content .text h3 {
+  font-family: f5;
+}
+body main .section-header {
+  font-family: dd;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 35.2px;
+}
+body main .about {
+  background-color: #2B2B2B;
+  padding: 57px 0 45.5px 0;
+}
+body main .about .container p {
+  color: white;
+  line-height: 44px;
+  font-size: 28px;
+  width: 960px;
+  max-width: 100%;
+  padding: 0 0 43px 0;
+  font-family: dd;
+}
+body main .about .container a {
+  color: #00AEF3;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: o77;
+  transition: all 0.3s ease;
+}
+body main .about .container a:hover {
+  color: #AAAAAA;
+}
+body main .courses {
+  background-color: #161616;
+  padding: 34px 0 58px 0;
+}
+body main .courses .container .courses-wrapper .section-header {
+  color: #DBDBDB;
+  margin-bottom: 54.5px;
+}
+body main .courses .container .courses-wrapper .courses-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 39px;
+}
+body main .courses .container .courses-wrapper .courses-grid .course {
+  width: 100%;
+  border: 1px solid rgb(85, 85, 85);
+  border-radius: 6px;
+  height: 414px;
+  display: flex;
+  flex-direction: column;
+  margin: 12.5px 0;
+}
+body main .courses .container .courses-wrapper .courses-grid .course img {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+body main .courses .container .courses-wrapper .courses-grid .course .course-body {
+  margin: 34px 0 21px 0;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body main .courses .container .courses-wrapper .courses-grid .course .course-body .course-info {
+  flex: 1;
+}
+body main .courses .container .courses-wrapper .courses-grid .course .course-body .course-info h3,
+body main .courses .container .courses-wrapper .courses-grid .course .course-body .course-info p {
+  font-family: dd;
+  color: #f4f4f4;
+}
+body main .courses .container .courses-wrapper .courses-grid .course .course-body .course-info h3 {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 26.4px;
+  margin-bottom: 25px;
+}
+body main .courses .container .courses-wrapper .courses-grid .course .course-body .course-info p {
+  font-size: 14px;
+  line-height: 22.4px;
+}
+body main .courses .container .courses-wrapper .courses-grid .course .course-body a {
+  font-family: o93;
+  color: #00AEEF;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body main .partners {
+  display: block;
+  background-color: #2B2B2B;
+  padding: 34px 0 0 0;
+}
+body main .partners .container .section-header {
+  color: #f4f4f4;
+  margin: 0 0 31px 0;
+}
+body main .partners .carousel {
+  display: flex;
+  align-items: center;
+}
+body main .partners .carousel .container {
+  position: relative;
+}
+body main .partners .carousel .container .carousel-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 224px;
+  position: relative;
+  margin-bottom: 40px;
+}
+body main .partners .carousel .container .carousel-content .carousel-slider {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
+body main .partners .carousel .container .carousel-content .carousel-slider img {
+  object-fit: contain;
+}
+body main .partners .carousel .container .sliders {
+  display: flex;
+  gap: 12px;
+  margin: auto;
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+body main .partners .carousel .container .sliders a {
+  display: block;
+  height: 6px;
+  width: 6px;
+  background-color: white;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+body main .partners .carousel .slide-btn {
+  margin: auto;
+  margin-bottom: 130px;
+}
+body main .partners .carousel .slide-btn button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+body main .partners .carousel .slide-btn button svg {
+  fill: rgb(232, 230, 230);
+  stroke: rgb(232, 230, 230);
+  width: 18px;
+  height: 35.14px;
+  transition: all 0.3s ease-in-out;
+}
+body main .partners .carousel .slide-btn button:hover svg {
+  opacity: 0.5;
+}
+body main .partners .carousel .slide-right {
+  transform: rotate(180deg);
+}
+body main .questions {
+  background-color: #161616;
+  padding: 105px 0 80px 0;
+}
+body main .questions .container {
+  padding: 0 40px;
+}
+body main .questions .container .section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+body main .questions .container .section-heading .section-header {
+  color: white;
+  line-height: 28.8px;
+}
+body main .questions .container .section-heading a {
+  color: #00AEF3;
+  font-family: o77;
+  line-height: 28.8px;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+body main .questions .container .section-heading a:hover {
+  color: #AAAAAA;
+}
+body main .questions .container .qaa .accordion-item {
+  overflow: hidden;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(53, 49, 49);
+}
+body main .questions .container .qaa .accordion-item .item-visible {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+body main .questions .container .qaa .accordion-item .item-visible p {
+  color: rgb(244, 244, 244);
+  font-family: dd;
+  font-size: 18px;
+  line-height: 26.4px;
+}
+body main .questions .container .qaa .accordion-item .item-visible svg {
+  fill: white;
+}
+body main .questions .container .qaa .accordion-item .accordion-content {
+  max-height: 0;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  will-change: opacity, max-height;
+}
+body main .questions .container .qaa .accordion-item .accordion-content h3, body main .questions .container .qaa .accordion-item .accordion-content p, body main .questions .container .qaa .accordion-item .accordion-content h4 {
+  font-size: 14px;
+  color: #F4F4F4;
+  font-family: dd;
+  font-weight: 400;
+}
+body main .questions .container .qaa .accordion-item .accordion-content h3 span, body main .questions .container .qaa .accordion-item .accordion-content p span, body main .questions .container .qaa .accordion-item .accordion-content h4 span {
+  font-weight: bold;
+}
+body main .questions .container .qaa .accordion-item .accordion-content h3 {
+  margin-bottom: 30px;
+  line-height: 28px;
+  padding: 2px 0 3px 0;
+}
+body main .questions .container .qaa .accordion-item .accordion-content p {
+  line-height: 2;
+  padding: 2px 0 3px 0;
+  width: 850px;
+  max-width: 100%;
+}
+body main .questions .container .qaa .accordion-item .accordion-content .steps {
+  margin-left: 1.5em;
+}
+body main .questions .container .qaa .accordion-item .accordion-content h4 {
+  margin-top: 45px;
+  line-height: 2;
+}
+body main .questions .container .bp-7 {
+  display: none;
+  color: #00AEF3;
+  font-family: o77;
+  line-height: 28.8px;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+body main .questions .container .bp-7:hover {
+  color: #AAAAAA;
+}
+
+@media screen and (max-width: 940px) {
+  body main .courses .container .courses-wrapper .courses-grid {
+    grid-template-columns: auto auto;
+  }
+  body main .partners .carousel .container .carousel-content .carousel-slider img {
+    width: 30% !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  body main .hero {
+    margin-top: 130px;
+  }
+  body main .questions .container .section-heading a {
+    display: none;
+  }
+  body main .questions .container .bp-7 {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 560px) {
+  body main .courses .container .courses-wrapper .courses-grid {
+    grid-template-columns: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

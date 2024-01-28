@@ -1,0 +1,75 @@
+@font-face {
+    font-family: dd;
+    src: url(../fonts/dd.woff2);
+}
+
+body {
+    footer {
+        background-color: #1A1E1F;
+        .container {
+            .footer-sub {
+                padding: 64px 0 43px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .left-footer {
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px   ;
+                        li {
+                            img {
+                                width: 106px;
+                                height: 30px;
+                            }
+                            p, a {
+                                font-size: 14px;
+                                font-family: dd;
+
+                            }
+                            p {
+                                color: #f4f4f4;
+                                line-height: 20px;
+                            }
+                            a {
+                                line-height: 22px;
+                                color: white;
+                            }
+                        }
+                        
+                    }
+                }
+                .right-footer {
+                    .socials {
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 10px;
+                        margin-bottom: 43px;
+                        img {
+                            width: 39px;
+                            height: 39px;
+                            object-fit: cover;
+                            
+                        }
+                    }
+                    button {
+                        font-size: 16px;
+                        color: white;
+                        font-family: dd;
+                        line-height: 25px;
+                        border: 0;
+                        border-radius: 6px;
+                        padding: 10px 30px;
+                        background-color: #00AEF3;
+                        cursor: pointer;
+                        transition: all 0.4s ease-in-out;
+                    }
+                    button:hover {
+                        background-color: #AAAAAA;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

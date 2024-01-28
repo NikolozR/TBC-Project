@@ -1,14 +1,16 @@
 @font-face {
-    font-family: BPG;
-    src: url(../assets/bpg_arial_2009.ttf);
+    font-family: dd;
+    src: url(../fonts/dd.woff2);
 }
 
 body {
     header {
         nav {
-            background-color: #1A1E1F;
+            background-color: rgba(26, 30, 31, 1);
             padding: 22px 0;
-            position: sticky;
+            position: fixed;
+            transition: all 0.3s ease-in-out;
+            top: 0;
             width: 100%;
             .container {
                 .sub-nav {
@@ -19,6 +21,7 @@ body {
                         svg {
                             width: 182px;
                             height: 40px;
+                            cursor: pointer;
                         }
                     }
                     ul {
@@ -32,6 +35,7 @@ body {
                                 line-height: 26px;
                                 font-size: 14px;
                                 transition: all 0.3s ease;
+                                font-family: dd;
                             }
                             .active {
                                 color: #0DA3E0;
@@ -40,15 +44,52 @@ body {
                                 color: #0DA3E0;
                             }
                         }
-                        li:nth-child(1), li:nth-child(4) {
-                            a {
-                                font-family: BPG;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        header {
+            nav {
+                .container {
+                    .sub-nav {
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        ul {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 490px) {
+    body {
+        header {
+            nav {
+                .container {
+                    .sub-nav {
+                        ul {
+                            gap: 30px;
+                            li {
+                                a {
+                                    font-size: 12px;
+                                }
                             }
                         }
                     }
                 }
             }
         }
-        
     }
 }

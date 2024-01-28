@@ -1,11 +1,13 @@
 @font-face {
-  font-family: BPG;
-  src: url(../assets/bpg_arial_2009.ttf);
+  font-family: dd;
+  src: url(../fonts/dd.woff2);
 }
 body header nav {
-  background-color: #1A1E1F;
+  background-color: rgb(26, 30, 31);
   padding: 22px 0;
-  position: sticky;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+  top: 0;
   width: 100%;
 }
 body header nav .container .sub-nav {
@@ -18,6 +20,7 @@ body header nav .container .sub-nav .main-logo {
 body header nav .container .sub-nav .main-logo svg {
   width: 182px;
   height: 40px;
+  cursor: pointer;
 }
 body header nav .container .sub-nav ul {
   display: flex;
@@ -30,6 +33,7 @@ body header nav .container .sub-nav ul li a {
   line-height: 26px;
   font-size: 14px;
   transition: all 0.3s ease;
+  font-family: dd;
 }
 body header nav .container .sub-nav ul li .active {
   color: #0DA3E0;
@@ -37,8 +41,25 @@ body header nav .container .sub-nav ul li .active {
 body header nav .container .sub-nav ul li a:hover {
   color: #0DA3E0;
 }
-body header nav .container .sub-nav ul li:nth-child(1) a, body header nav .container .sub-nav ul li:nth-child(4) a {
-  font-family: BPG;
+
+@media screen and (max-width: 700px) {
+  body header nav .container .sub-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  body header nav .container .sub-nav ul {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 490px) {
+  body header nav .container .sub-nav ul {
+    gap: 30px;
+  }
+  body header nav .container .sub-nav ul li a {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=nav.css.map */

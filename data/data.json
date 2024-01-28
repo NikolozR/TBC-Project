@@ -1,0 +1,86 @@
+{
+    "courses": [
+      {
+        "img": "./assets/ios.png",
+        "name": "IOS Development",
+        "statusOfRegistration": -1
+      },
+      {
+        "img": "./assets/react.png",
+        "name": "React",
+        "statusOfRegistration": -1
+      },
+      {
+        "img": "./assets/python.png",
+        "name": "Intro to Python",
+        "statusOfRegistration": -1
+      },
+      {
+        "img": "./assets/python.png",
+        "name": "Advanced Python",
+        "statusOfRegistration": -1
+      },
+      {
+        "img": "./assets/cyber.png",
+        "name": "Advanced Cybersecurity Course",
+        "statusOfRegistration": -1
+      },
+      {
+        "img": "./assets/tot.png",
+        "name": "ToT - Training of Trainers",
+        "statusOfRegistration": -1
+      },
+      {
+        "img": "./assets/blockchain.png",
+        "name": "Blockchain",
+        "statusOfRegistration": -1
+      },
+      {
+        "img": "./assets/devops.png",
+        "name": "DevOps",
+        "statusOfRegistration": -1
+      },
+      {
+        "img": "./assets/information.png",
+        "name": "Information Security Governance",
+        "statusOfRegistration": -1
+      }
+    ],
+    "partners": [
+      {
+        "name": "USAID",
+        "img": "./assets/usaid.png",
+        "width": 246
+      },
+      {
+        "name": "Space",
+        "img": "./assets/space.png",
+        "width": 241
+      },
+      {
+        "name": "Tineti",
+        "img": "./assets/tineti.png",
+        "width": 250
+      },
+      {
+        "name": "Tegeta",
+        "img": "./assets/tegeta.png",
+        "width": 248
+      },
+      {
+        "name": "Spectre",
+        "img": "./assets/spectire.png",
+        "width": 187
+      },
+      {
+        "name": "TBC",
+        "img": "./assets/tbc.png",
+        "width": 312
+      },
+      {
+        "name": "UFC",
+        "img": "./assets/ufc.png",
+        "width": 227
+      }
+    ]
+  }

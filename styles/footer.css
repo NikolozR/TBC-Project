@@ -1,0 +1,63 @@
+@font-face {
+  font-family: dd;
+  src: url(../fonts/dd.woff2);
+}
+body footer {
+  background-color: #1A1E1F;
+}
+body footer .container .footer-sub {
+  padding: 64px 0 43px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body footer .container .footer-sub .left-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body footer .container .footer-sub .left-footer ul li img {
+  width: 106px;
+  height: 30px;
+}
+body footer .container .footer-sub .left-footer ul li p, body footer .container .footer-sub .left-footer ul li a {
+  font-size: 14px;
+  font-family: dd;
+}
+body footer .container .footer-sub .left-footer ul li p {
+  color: #f4f4f4;
+  line-height: 20px;
+}
+body footer .container .footer-sub .left-footer ul li a {
+  line-height: 22px;
+  color: white;
+}
+body footer .container .footer-sub .right-footer .socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 43px;
+}
+body footer .container .footer-sub .right-footer .socials img {
+  width: 39px;
+  height: 39px;
+  object-fit: cover;
+}
+body footer .container .footer-sub .right-footer button {
+  font-size: 16px;
+  color: white;
+  font-family: dd;
+  line-height: 25px;
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 30px;
+  background-color: #00AEF3;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+body footer .container .footer-sub .right-footer button:hover {
+  background-color: #AAAAAA;
+  color: black;
+}
+
+/*# sourceMappingURL=footer.css.map */
